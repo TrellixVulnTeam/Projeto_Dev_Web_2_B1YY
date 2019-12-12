@@ -4,7 +4,7 @@
 
 <div class="row">
   {% block body %}
-  <h1>Nova Tarefa</h1>
+  <h2>Nova Tarefa</h2>
     <form class="" action="" method="post">
       {% csrf_token %}
       <div class="form-group">
@@ -24,11 +24,7 @@
       {{ form.prioridade}}
     </div>
     <div class="form-group">
-      <label for="{{ form.categoria.descricao.id_for_label }}">Categoria</label>
-      {{ form.categoria}}
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="submit" class="btn btn-danger">Salvar</button>
     </div>
 
     </form>
